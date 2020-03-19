@@ -1,0 +1,26 @@
+@import "src/sass/abstracts/variables";
+
+.form-field {
+  font-size: $font-size-base;
+  color: $form-field-text-color;
+  background-color: $form-field-color;
+  border-radius: $form-field-border-radius;
+  border-style: $form-border-style;
+  padding: $form-field-padding;
+  //display: $form-field-default-display;
+  cursor: $form-field-cursor;
+}
+
+//form select
+.form-select {
+  @extend .form-field;
+  position: relative;
+
+  &:after {
+    content: "\ea29";
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+}

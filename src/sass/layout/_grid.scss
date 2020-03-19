@@ -1,0 +1,37 @@
+@import "src/sass/abstracts/variables";
+
+//--- grid for tablet & desktop --- //
+//use example breakpoints: breakpoint-sass.com
+//grid tutorial: https://css-tricks.com/snippets/css/complete-guide-grid/
+
+@media only screen and (min-width: $breakpoint-tablet) {
+
+  .nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 2fr 1fr;
+    grid-column: 2/8;
+    justify-items: start;
+    align-items: center;
+
+    .nav-btn {
+      justify-self: end;
+    }
+  }
+
+  .grid {
+    display: grid;
+    //grid-template-columns: [main-col] 7fr [side-col] 3fr;
+    // offsets
+    grid-template-columns: [offset] 1fr [main-col] 7fr [side-col] 3fr [offset] 1fr;
+    grid-column: 2/11;
+    grid-column-gap: 7rem;
+    justify-items: stretch;
+
+    .sub-grid-list {
+      display: grid;
+      grid-template-columns: 7fr 3fr;
+      grid-auto-rows: minmax(16rem, auto);
+      justify-items: stretch;
+    }
+  }
+}

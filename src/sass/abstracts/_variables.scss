@@ -1,0 +1,61 @@
+//variables
+$body-background: #fff;
+
+//font
+$font-family: Rubik, Helvetica, sans-serif;
+$font-size-base: 1.6rem; //if font-size is set to 62.5%
+$font-weight-base: 300;
+
+//colors
+$brand-color: #176AE6;
+$default-grey: #555;
+$divider-color: rgba(0,0,0, 0.12);
+
+//text color
+$main-text-color: #6b707d;
+$heading-text-color: #323232;
+$link-text-color: $brand-color;
+$warning-text-color: #e74c3c;
+
+//buttons
+$primary-button-color: $brand-color;
+
+$button-border-radius: 0;
+$button-padding: 1rem 1.5rem;
+$button-light-text-color: #fff;
+$button-font-weight: $font-weight-base;
+$button-border-style: none;
+$button-letter-spacing: 1;
+//$button-default-display: block;
+//$button-desktop-display: inline-block;
+
+//radio buttons
+$radio-border-color: $default-grey;
+$radio-border-checked-color: $brand-color;
+$radio-size: 2rem;
+
+//checkbox
+
+//form fields
+$form-field-color: #F0F1F5;
+$form-field-text-color: $default-grey;
+$form-field-padding: 1.5rem;
+$form-field-border-radius: 0;
+$form-border-style: none;
+$form-field-default-display: block;
+$form-field-cursor: pointer;
+
+//form select
+
+//headings
+$h1-font-size: 3 rem;
+$h2-font-size: 2 rem;
+$h3-font-size: 1.6 rem;
+$h4-font-size: 1.4 rem;
+$h5-font-size: 1.2 rem;
+$h6-font-size: 1 rem;
+
+//breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+

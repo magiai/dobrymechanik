@@ -1,0 +1,195 @@
+/*! Dory Mechanik v0.0.1 | (c) 2020 Dominika Adamska | MIT License | http://link-to-your-git-repo.com */
+/* line 3, src/sass/base/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 7, src/sass/base/_base.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 11, src/sass/base/_base.scss */
+body {
+  font-family: Rubik, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+/* line 18, src/sass/base/_base.scss */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+/* line 8, src/sass/components/_buttons.scss */
+button {
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 1rem 1.5rem;
+  letter-spacing: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 23, src/sass/components/_buttons.scss */
+.btn-primary-raised {
+  color: #fff;
+  background-color: #176AE6;
+  border-style: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 23, src/sass/components/_buttons.scss */
+  .btn-primary-raised {
+    width: 100%;
+  }
+}
+
+/* line 32, src/sass/components/_buttons.scss */
+.btn-primary-raised:hover, .btn-primary-raised:focus {
+  background-color: #1255b8;
+}
+
+/* line 36, src/sass/components/_buttons.scss */
+.btn-primary-raised:disabled {
+  background-color: #fdfeff;
+}
+
+/* line 41, src/sass/components/_buttons.scss */
+.btn-primary-outline {
+  color: #176AE6;
+  border: 1px solid #176AE6;
+  background-color: transparent;
+}
+
+/* line 23, src/sass/components/_buttons.scss */
+.btn-default-raised {
+  color: #fff;
+  background-color: #555;
+  border-style: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 23, src/sass/components/_buttons.scss */
+  .btn-default-raised {
+    width: 100%;
+  }
+}
+
+/* line 32, src/sass/components/_buttons.scss */
+.btn-default-raised:hover, .btn-default-raised:focus {
+  background-color: #3c3c3c;
+}
+
+/* line 36, src/sass/components/_buttons.scss */
+.btn-default-raised:disabled {
+  background-color: #fdfeff;
+}
+
+/* line 41, src/sass/components/_buttons.scss */
+.btn-default-outline {
+  color: #555;
+  border: 1px solid #555;
+  background-color: transparent;
+}
+
+/* line 3, src/sass/components/_form-fields.scss */
+.form-field, .form-select {
+  font-size: 1.6rem;
+  color: #555;
+  background-color: #F0F1F5;
+  border-radius: 0;
+  border-style: none;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+/* line 15, src/sass/components/_form-fields.scss */
+.form-select {
+  position: relative;
+}
+
+/* line 19, src/sass/components/_form-fields.scss */
+.form-select:after {
+  content: "\ea29";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 9, src/sass/layout/_grid.scss */
+  .nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 2fr 1fr;
+    grid-column: 2/8;
+    justify-items: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 16, src/sass/layout/_grid.scss */
+  .nav-grid .nav-btn {
+    justify-self: end;
+  }
+  /* line 21, src/sass/layout/_grid.scss */
+  .grid {
+    display: grid;
+    grid-template-columns: [offset] 1fr [main-col] 7fr [side-col] 3fr [offset] 1fr;
+    grid-column: 2/11;
+    grid-column-gap: 7rem;
+    justify-items: stretch;
+  }
+  /* line 30, src/sass/layout/_grid.scss */
+  .grid .sub-grid-list {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-auto-rows: minmax(16rem, auto);
+    justify-items: stretch;
+  }
+}
+
+/* line 3, src/sass/layout/_header.scss */
+.main-logo {
+  height: 4rem;
+  width: auto;
+}
+
+/* line 8, src/sass/layout/_header.scss */
+.slogan {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* line 12, src/sass/layout/_header.scss */
+.header {
+  padding: 1rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.12);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 22, src/sass/layout/_header.scss */
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* line 27, src/sass/layout/_header.scss */
+  nav :not(.main-logo) {
+    display: none;
+  }
+}

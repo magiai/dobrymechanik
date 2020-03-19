@@ -1,0 +1,46 @@
+@import "src/sass/abstracts/variables";
+
+$buttons: (
+  primary: $primary-button-color,
+  default: $default-grey,
+);
+
+button {
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  //font-weight: $button-font-weight;
+  border-radius: $button-border-radius;
+  padding: $button-padding;
+  letter-spacing: $button-letter-spacing;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+@each $button, $color in $buttons {
+
+  &.btn-#{$button}-raised {
+    color: $button-light-text-color;
+    background-color: $color;
+    border-style: $button-border-style;
+
+    @media only screen and (max-width: $breakpoint-tablet) {
+      width: 100%;
+    }
+
+    &:hover, &:focus {
+      background-color: darken($color, 10%);
+    }
+
+    &:disabled {
+      background-color: lighten($primary-button-color, 50%);
+    }
+  }
+
+  &.btn-#{$button}-outline {
+    color: $color;
+    border: 1px solid $color;
+    background-color: transparent;
+  }
+}

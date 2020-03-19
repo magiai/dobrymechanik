@@ -1,0 +1,31 @@
+@import "src/sass/abstracts/variables";
+
+.main-logo {
+  height: 4rem;
+  width: auto;
+}
+
+.slogan {
+  border-left: 1px solid $divider-color;
+}
+
+.header {
+  padding: 1rem;
+  border-bottom: 0.1rem solid $divider-color;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav :not(.main-logo) {
+    display: none;
+  }
+}
+

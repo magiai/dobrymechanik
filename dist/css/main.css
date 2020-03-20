@@ -99,27 +99,32 @@
   padding-top: 0rem !important;
 }
 
-/* line 56, src/sass/abstracts/_reusables.scss */
+/* line 54, src/sass/abstracts/_reusables.scss */
+.p-b-0 {
+  padding-bottom: 0rem !important;
+}
+
+/* line 57, src/sass/abstracts/_reusables.scss */
 .pull-right {
   float: right;
 }
 
-/* line 57, src/sass/abstracts/_reusables.scss */
+/* line 58, src/sass/abstracts/_reusables.scss */
 .pull-left {
   float: left;
 }
 
-/* line 59, src/sass/abstracts/_reusables.scss */
+/* line 60, src/sass/abstracts/_reusables.scss */
 .text-align-right {
   text-align: right;
 }
 
-/* line 60, src/sass/abstracts/_reusables.scss */
+/* line 61, src/sass/abstracts/_reusables.scss */
 .text-align-left {
   text-align: left;
 }
 
-/* line 62, src/sass/abstracts/_reusables.scss */
+/* line 63, src/sass/abstracts/_reusables.scss */
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,7 +135,7 @@
           flex-direction: row;
 }
 
-/* line 67, src/sass/abstracts/_reusables.scss */
+/* line 68, src/sass/abstracts/_reusables.scss */
 .align-items-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,7 +145,7 @@
           align-items: center;
 }
 
-/* line 72, src/sass/abstracts/_reusables.scss */
+/* line 73, src/sass/abstracts/_reusables.scss */
 .justify-content-end {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,7 +156,7 @@
   justify-items: end;
 }
 
-/* line 79, src/sass/abstracts/_reusables.scss */
+/* line 80, src/sass/abstracts/_reusables.scss */
 .img-responsive {
   width: 100%;
   height: auto;
@@ -593,22 +598,26 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 28, src/sass/layout/_grid.scss */
+  /* line 27, src/sass/layout/_grid.scss */
+  .aside-steps-grid {
+    padding-bottom: 7.4rem;
+  }
+  /* line 32, src/sass/layout/_grid.scss */
   .search-list-img {
     grid-column: 1/2;
   }
-  /* line 29, src/sass/layout/_grid.scss */
+  /* line 33, src/sass/layout/_grid.scss */
   .search-list-text {
     grid-column: 2/5;
   }
-  /* line 30, src/sass/layout/_grid.scss */
+  /* line 34, src/sass/layout/_grid.scss */
   .search-list-summary {
     grid-column: 2/5;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 36, src/sass/layout/_grid.scss */
+  /* line 40, src/sass/layout/_grid.scss */
   .container {
     padding-right: 2rem;
     padding-left: 2rem;
@@ -616,88 +625,88 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 46, src/sass/layout/_grid.scss */
+  /* line 50, src/sass/layout/_grid.scss */
   .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
-  /* line 53, src/sass/layout/_grid.scss */
+  /* line 57, src/sass/layout/_grid.scss */
   .search-list-grid .search-list-img {
     grid-column: 1/2;
   }
-  /* line 54, src/sass/layout/_grid.scss */
+  /* line 58, src/sass/layout/_grid.scss */
   .search-list-grid .search-list-text {
     grid-column: 2/4;
   }
-  /* line 55, src/sass/layout/_grid.scss */
+  /* line 59, src/sass/layout/_grid.scss */
   .search-list-grid .search-list-summary {
     grid-column: 4/5;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 63, src/sass/layout/_grid.scss */
+  /* line 67, src/sass/layout/_grid.scss */
   .main-logo {
     grid-column: 1/3;
   }
-  /* line 64, src/sass/layout/_grid.scss */
+  /* line 68, src/sass/layout/_grid.scss */
   .slogan {
     grid-column: 3/10;
   }
-  /* line 65, src/sass/layout/_grid.scss */
+  /* line 69, src/sass/layout/_grid.scss */
   .nav-btn {
     grid-column: 10/13;
   }
-  /* line 68, src/sass/layout/_grid.scss */
+  /* line 72, src/sass/layout/_grid.scss */
   .home-search-grid, .steps-grid {
     grid-column: 1/8;
   }
-  /* line 73, src/sass/layout/_grid.scss */
+  /* line 77, src/sass/layout/_grid.scss */
   .aside-search-grid, .aside-steps-grid {
     grid-column: 8/13;
   }
-  /* line 77, src/sass/layout/_grid.scss */
+  /* line 81, src/sass/layout/_grid.scss */
   .steps-grid, .aside-steps-grid {
     padding-top: 2rem;
   }
-  /* line 81, src/sass/layout/_grid.scss */
+  /* line 85, src/sass/layout/_grid.scss */
   .aside-steps-grid {
     padding-left: 2rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 90, src/sass/layout/_grid.scss */
+  /* line 94, src/sass/layout/_grid.scss */
   .main-logo {
     grid-column: 2/4;
   }
-  /* line 94, src/sass/layout/_grid.scss */
+  /* line 98, src/sass/layout/_grid.scss */
   .slogan {
     grid-column: 4/8;
   }
-  /* line 98, src/sass/layout/_grid.scss */
+  /* line 102, src/sass/layout/_grid.scss */
   .nav-btn {
     grid-column: 8/12;
     justify-self: end;
   }
-  /* line 104, src/sass/layout/_grid.scss */
+  /* line 108, src/sass/layout/_grid.scss */
   .home-search-grid {
     grid-column: 2/8;
   }
-  /* line 105, src/sass/layout/_grid.scss */
+  /* line 109, src/sass/layout/_grid.scss */
   .aside-search-grid {
     grid-column: 8/12;
   }
-  /* line 108, src/sass/layout/_grid.scss */
+  /* line 112, src/sass/layout/_grid.scss */
   .steps-grid {
     grid-column: 3/8;
   }
-  /* line 110, src/sass/layout/_grid.scss */
+  /* line 114, src/sass/layout/_grid.scss */
   .aside-steps-grid {
     grid-column: 8/11;
     padding-left: 5rem;
   }
-  /* line 115, src/sass/layout/_grid.scss */
+  /* line 119, src/sass/layout/_grid.scss */
   .steps-grid, .aside-steps-grid {
     padding-top: 4rem;
   }

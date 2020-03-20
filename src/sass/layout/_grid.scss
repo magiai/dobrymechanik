@@ -4,34 +4,100 @@
 //use example breakpoints: breakpoint-sass.com
 //grid tutorial: https://css-tricks.com/snippets/css/complete-guide-grid/
 
+//all devices
+.container {
+  margin-top: 11rem;
+  padding: 1rem;
+}
+
+.search-list-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1rem;
+}
+
+//mobile only
+@media only screen and (max-width: $breakpoint-tablet) {
+
+  .container, .header-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  //search list
+  .search-list-img { grid-column: 1/2; }
+  .search-list-text { grid-column: 2/5; }
+  .search-list-summary { grid-column: 2/5; }
+}
+
+//mobile & tablet
+@media only screen and (max-width: $breakpoint-desktop) {
+
+  .container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+//tablet & desktop
 @media only screen and (min-width: $breakpoint-tablet) {
 
-  .nav-grid {
+  //main grid
+  .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 4fr 2fr 1fr;
-    grid-column: 2/8;
-    justify-items: start;
+    grid-template-columns: repeat(12, 1fr);
     align-items: center;
-
-    .nav-btn {
-      justify-self: end;
-    }
   }
 
-  .grid {
-    display: grid;
-    //grid-template-columns: [main-col] 7fr [side-col] 3fr;
-    // offsets
-    grid-template-columns: [offset] 1fr [main-col] 7fr [side-col] 3fr [offset] 1fr;
-    grid-column: 2/11;
-    grid-column-gap: 7rem;
-    justify-items: stretch;
-
-    .sub-grid-list {
-      display: grid;
-      grid-template-columns: 7fr 3fr;
-      grid-auto-rows: minmax(16rem, auto);
-      justify-items: stretch;
-    }
+  //search list grid
+  .search-list-grid {
+    .search-list-img { grid-column: 1/2; }
+    .search-list-text { grid-column: 2/4; }
+    .search-list-summary { grid-column: 4/5; }
   }
+}
+
+//tablet only
+@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+
+  //header
+  .main-logo { grid-column: 1/3; }
+  .slogan { grid-column: 3/10; }
+  .nav-btn { grid-column: 10/13; }
+
+  //home search page
+  .home-search, .main-steps {
+    grid-column: 1/8;
+  }
+
+  //steps pages
+  .sidebar-search, sidebar-steps {
+    grid-column: 8/13;
+  }
+}
+
+//desktop only
+@media only screen and (min-width: $breakpoint-desktop) {
+
+  //header
+  .main-logo {
+    grid-column: 2/4;
+  }
+
+  .slogan {
+    grid-column: 4/8;
+  }
+
+  .nav-btn {
+    grid-column: 8/12;
+    justify-self: end;
+  }
+
+  //home search page
+  .home-search { grid-column: 2/8; }
+  .sidebar-search { grid-column: 8/12; }
+
+  //steps pages
+  .main-steps { grid-column: 3/8 }
+  .sidebar-steps { grid-column: 8/11; }
 }

@@ -1,31 +1,38 @@
 @import "src/sass/abstracts/variables";
 
-.main-logo {
-  height: 4rem;
-  width: auto;
-}
-
-.slogan {
-  border-left: 1px solid $divider-color;
-}
-
-.header {
+.header-container {
+  background-color: $body-background;
   padding: 1rem;
-  border-bottom: 0.1rem solid $divider-color;
   position: fixed;
+  top:0;
   z-index: 1;
   width: 100%;
+  border-bottom: 0.1rem solid $divider-color;
+
+  .main-logo-img {
+    height: 4rem;
+    width: auto;
+  }
+
+  .slogan {
+    border-left: 1px solid $divider-color;
+    font-weight: $font-weight-base;
+    color: $main-text-color;
+  }
 }
 
 @media only screen and (max-width: $breakpoint-tablet) {
 
-  .header {
-    display: flex;
-    justify-content: center;
+  .main-logo-img {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
-  nav :not(.main-logo) {
+  nav :not(.main-logo, .main-logo-img) {
     display: none;
   }
 }
+
+
+
 

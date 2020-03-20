@@ -6,13 +6,14 @@ $buttons: (
 );
 
 button {
-  display: inline-block;
-  margin: 0;
+  //display: inline-block;
   text-decoration: none;
   cursor: pointer;
   //font-weight: $button-font-weight;
   border-radius: $button-border-radius;
   padding: $button-padding;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   letter-spacing: $button-letter-spacing;
   -webkit-appearance: none;
   -moz-appearance: none;

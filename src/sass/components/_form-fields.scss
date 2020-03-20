@@ -9,6 +9,7 @@
   padding: $form-field-padding;
   //display: $form-field-default-display;
   cursor: $form-field-cursor;
+  width: 100%;
 }
 
 //form select
@@ -22,5 +23,14 @@
     top: 0;
     right: 0;
   }
+}
 
+//form-search
+.form-search {
+  background-image:url("https://img.icons8.com/small/24/000000/search.png");
+  background-repeat:no-repeat;
+  background-position:left 1rem center;
+  padding-left: 4rem;
+  background-color: $form-field-color;
+  outline:0;
 }

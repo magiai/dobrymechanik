@@ -1,0 +1,63 @@
+@import "src/sass/abstracts/variables";
+//general classes
+
+//tex-color
+.text-dark {
+  color: $heading-text-color;
+}
+
+.text-warning {
+  color: $warning-text-color;
+}
+
+//margins
+.m-t-0 { margin-top: 0rem !important; }
+.m-b-0 { margin-bottom: 0rem !important; }
+
+.m-t-10 { margin-top: 1rem !important; }
+.m-b-10 { margin-bottom: 1rem !important; }
+.m-t-20 { margin-top: 2rem !important; }
+.m-b-20 { margin-bottom: 2rem !important; }
+
+.m-v-0 {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+//paddings
+.p-l-0 { padding-left: 0rem !important; }
+.p-r-0 { padding-right: 0rem !important; }
+
+//aligns
+.pull-right { float: right; }
+
+.pull-left { float: left; }
+
+.text-align-right { text-align: right; }
+
+.text-align-left { text-align: left; }
+
+.align-items-center{
+  display: flex;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.self-align-end {
+  align-self: end;
+}
+
+.justify-items-end {
+  display: flex;
+  justify-content: end;
+}
+
+//image
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+

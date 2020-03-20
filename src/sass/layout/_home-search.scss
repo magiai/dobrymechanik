@@ -1,0 +1,88 @@
+@import "src/sass/abstracts/variables";
+
+#search-list{
+
+  .rating {
+
+    &.star {
+      background-image: url(src/svg/star.svg);
+    }
+
+    background-repeat: repeat-x;
+    background-size: 2rem 2rem;
+    width: 10rem;
+    height: 2rem;
+  }
+
+  .search-list-summary {
+
+    @media only screen and (max-width: $breakpoint-tablet) {
+      margin-top: 2rem;
+    }
+
+    .old-price {
+      font-size: $h4-font-size;
+    }
+
+    .price-discount {
+      color: $warning-text-color;
+      letter-spacing: 0.2rem;
+      font-size: $h2-font-size;
+      font-weight: $font-weight-bold;
+      margin-left: 1rem;
+    }
+
+    .discount-info {
+      color: $warning-text-color;
+      font-size: $h4-font-size;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    small:hover {
+      position: relative;
+    }
+
+    small[aria-label]:hover:after {
+      background: $main-text-color;
+      color: #fff;
+      content: attr(aria-label);
+      text-align: left;
+      line-height: $line-height;
+      padding: 1rem 1rem;
+      border-radius: 0.5rem;
+      font-size: $h5-font-size;
+      max-width: 30rem;
+      position: absolute;
+      //left: -200%;
+      //top: -400%;
+      z-index: 1;
+    }
+  }
+
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+
+  small[aria-label]:hover:after {
+    left: -200%;
+    top: -400%;
+  }
+
+  #map {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-tablet) {
+
+  small[aria-label]:hover:after {
+    left: 110%;
+    top: -400%;
+  }
+
+  .map-link {
+    display: none;
+  }
+
+}

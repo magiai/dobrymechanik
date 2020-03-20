@@ -5,6 +5,8 @@ $body-background: #fff;
 $font-family: Rubik, Helvetica, sans-serif;
 $font-size-base: 1.6rem; //if font-size is set to 62.5%
 $font-weight-base: 300;
+$font-weight-bold: 800;
+$line-height: 1.5;
 
 //colors
 $brand-color: #176AE6;
@@ -13,15 +15,14 @@ $divider-color: rgba(0,0,0, 0.12);
 
 //text color
 $main-text-color: #6b707d;
-$heading-text-color: #323232;
+$heading-text-color: rgb(50, 50, 50) !important;
 $link-text-color: $brand-color;
 $warning-text-color: #e74c3c;
 
 //buttons
 $primary-button-color: $brand-color;
-
 $button-border-radius: 0;
-$button-padding: 1rem 1.5rem;
+$button-padding: 1.5rem 2rem;
 $button-light-text-color: #fff;
 $button-font-weight: $font-weight-base;
 $button-border-style: none;
@@ -48,12 +49,12 @@ $form-field-cursor: pointer;
 //form select
 
 //headings
-$h1-font-size: 3 rem;
-$h2-font-size: 2 rem;
-$h3-font-size: 1.6 rem;
-$h4-font-size: 1.4 rem;
-$h5-font-size: 1.2 rem;
-$h6-font-size: 1 rem;
+$h1-font-size: 3rem !important;
+$h2-font-size: 2rem !important;
+$h3-font-size: 1.6rem !important;
+$h4-font-size: 1.4rem !important;
+$h5-font-size: 1.2rem !important;
+$h6-font-size: 1rem !important;
 
 //breakpoints
 $breakpoint-tablet: 768px;

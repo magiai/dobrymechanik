@@ -2,36 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="925e7e50-7ec7-4bad-8909-4739604133b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/copy/views/schedule-meeting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/car.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/information-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/map-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sass/abstracts/_reusables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sass/layout/_home-search.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/map-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/layout/_step-one.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/svg/a-large-file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/route.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/route.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/router.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/router.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/views/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/views/schedule-meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/views/schedule-meeting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/copy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/copy/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy/views/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/copy/views/schedule-meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy/views/schedule-meeting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/abstracts/_reusables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/abstracts/_reusables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/abstracts/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/components/_form-fields.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_form-fields.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/layout/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/layout/_grid.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/layout/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/layout/_home-search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/layout/_home-search.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/a-large-file.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584530475904</updated>
-      <workItem from="1584530482482" duration="72383000" />
+      <workItem from="1584530482482" duration="89905000" />
     </task>
     <servers />
   </component>
@@ -110,10 +106,14 @@
       <screen x="2048" y="0" width="1920" height="1040" />
     </state>
     <state x="2629" y="41" width="758" height="957" key="find.popup/2048.0.1920.1040/0.0.2048.1112@2048.0.1920.1040" timestamp="1584531234033" />
-    <state x="657" y="257" key="run.anything.popup" timestamp="1584640898207">
+    <state x="657" y="257" key="run.anything.popup" timestamp="1584702514267">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="657" y="257" key="run.anything.popup/2048.0.1920.1040/0.0.2048.1112@0.0.2048.1112" timestamp="1584640898207" />
+    <state x="657" y="257" key="run.anything.popup/2048.0.1920.1040/0.0.2048.1112@0.0.2048.1112" timestamp="1584702514267" />
     <state x="2664" y="240" key="run.anything.popup/2048.0.1920.1040/0.0.2048.1112@2048.0.1920.1040" timestamp="1584555487350" />
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1584713630263">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/2048.0.1920.1040/0.0.2048.1112@0.0.2048.1112" timestamp="1584713630263" />
   </component>
 </project>

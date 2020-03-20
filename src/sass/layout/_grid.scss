@@ -46,7 +46,6 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    align-items: center;
   }
 
   //search list grid
@@ -65,13 +64,13 @@
   .slogan { grid-column: 3/10; }
   .nav-btn { grid-column: 10/13; }
 
-  //home search page
-  .home-search, .main-steps {
+  //main container
+  .home-search-grid, .steps-grid {
     grid-column: 1/8;
   }
 
-  //steps pages
-  .sidebar-search, sidebar-steps {
+  //aside container
+  .aside-search-grid, .aside-steps-grid {
     grid-column: 8/13;
   }
 }
@@ -94,10 +93,10 @@
   }
 
   //home search page
-  .home-search { grid-column: 2/8; }
-  .sidebar-search { grid-column: 8/12; }
+  .home-search-grid { grid-column: 2/8; }
+  .aside-search-grid { grid-column: 8/12; }
 
   //steps pages
-  .main-steps { grid-column: 3/8 }
-  .sidebar-steps { grid-column: 8/11; }
+  .steps-grid { grid-column: 3/8 }
+  .aside-steps-grid { grid-column: 8/11; }
 }

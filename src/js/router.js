@@ -32,20 +32,22 @@ Router.prototype = {
         if (window.location.hash.length > 0) {
             for (var i = 0, length = r.length; i < length; i++) {
                 var route = r[i];
+
                 if(route.isActiveRoute(window.location.hash.substr(1))) {
-                    scope.goToRoute(route.htmlName);
+                    console.log(route)
+                    scope.goToRoute(route.htmlName, route.stepValue);
                 }
             }
         } else {
             for (var i = 0, length = r.length; i < length; i++) {
                 var route = r[i];
                 if(route.default) {
-                    scope.goToRoute(route.htmlName);
+                    scope.goToRoute(route.htmlName, route.stepValue);
                 }
             }
         }
     },
-    goToRoute: function (htmlName) {
+    goToRoute: function (htmlName, stepValue) {
         (function(scope) {
             var url = 'views/' + htmlName,
                 xhttp = new XMLHttpRequest();
@@ -56,6 +58,10 @@ Router.prototype = {
             };
             xhttp.open('GET', url, true);
             xhttp.send();
+
+            //progress bar
+            const progressBar = document.getElementById('progress-bar');
+            console.log(stepValue);
         })(this);
     }
 };

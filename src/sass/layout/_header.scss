@@ -9,13 +9,24 @@
   width: 100%;
   border-bottom: 0.1rem solid $divider-color;
 
+  #progress-bar {
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    height: 5px;
+    width: 100px;
+  }
+
+  .grid-container {
+    align-items: center;
+  }
+
   .main-logo-img {
     height: 4rem;
     width: auto;
   }
 
   .slogan {
-    border-left: 1px solid $divider-color;
     font-weight: $font-weight-base;
     color: $main-text-color;
   }

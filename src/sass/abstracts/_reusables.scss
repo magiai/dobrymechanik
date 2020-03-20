@@ -2,13 +2,31 @@
 //general classes
 
 //tex-color
-.text-dark {
-  color: $heading-text-color;
+.text-dark { color: $heading-text-color; }
+
+.text-warning { color: $warning-text-color; }
+
+//font size
+.font-1{
+  font-size: $h1-font-size;
+  font-weight: $font-weight-bold;
 }
 
-.text-warning {
-  color: $warning-text-color;
+.font-2{
+  font-size: $h2-font-size;
+  font-weight: $font-weight-bold;
 }
+
+.font-3{
+  font-size: $h3-font-size;
+  font-weight: $font-weight-bold;
+}
+
+.font-4{ font-size: $h4-font-size; }
+
+.font-5{ font-size: $h5-font-size; }
+
+.font-6{ font-size: $h6-font-size; }
 
 //margins
 .m-t-0 { margin-top: 0rem !important; }
@@ -24,35 +42,36 @@
   margin-bottom: 0rem !important;
 }
 
+.m-v-10 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
 //paddings
 .p-l-0 { padding-left: 0rem !important; }
 .p-r-0 { padding-right: 0rem !important; }
 
 //aligns
 .pull-right { float: right; }
-
 .pull-left { float: left; }
 
 .text-align-right { text-align: right; }
-
 .text-align-left { text-align: left; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
 
 .align-items-center{
   display: flex;
   align-items: center;
 }
 
-.flex {
-  display: flex;
-}
-
-.self-align-end {
-  align-self: end;
-}
-
-.justify-items-end {
+.justify-content-end {
   display: flex;
   justify-content: end;
+  justify-items: end;
 }
 
 //image

@@ -1,53 +1,64 @@
-<section id="search" class="home-search">
+<section id="search" class="home-search-grid">
 
   <h1 class="m-v-0">Znaleźliśmy dla Ciebie 13 warsztatów w Warszawie</h1>
 
   <p>Jeśli chcesz dowiedzieć się w jakiej odległości od Ciebie znajdują się warsztaty, wpisz swój adres w wyszukiwarkę.
     Przy każdym warsztacie wyświetlimy odległośćod Twojego miejsca zamieszkania.</p>
 
-  <form action="search">
+  <form action="search" method="GET" accept-charset="utf-8">
     <div class="form-search">
-      <input type="search" placeholder="Wpisz swój adres" class="form-field p-l-0">
+      <input type="text" placeholder="Wpisz swój adres" class="form-field p-l-0">
     </div>
-<!--    <div class="text-align-right">-->
-<!--      <button type="submit" class="btn-primary-raised" aria-label="search" name="search" data-category="search button">Szukaj</button>-->
-<!--    </div>-->
   </form>
 
-  <div class="text-align-right m-t-10">
+  <div class="justify-items-end m-t-10">
     <a href="#map" class="map-link align-items-center"><img class="map-icon" src="/img/map-icon.png" alt="ikona mapy">Mapa</a>
   </div>
 
+  <!--  search list-->
   <section id="search-list" class="m-t-20">
+
+    <!--  search item-->
     <article class="search-list-grid">
 
       <img src="/img/car.png" class="search-list-img img-responsive" alt="zdjęcie warsztatu samochodowego">
 
       <dl class="search-list-text">
         <dt><h3 class="m-t-0 m-b-10">Mechanic's Garage Centrum</h3></dt>
-        <dd>
+
+        <dd class="font-4">
           <strong class="text-dark">3km od Ciebie</strong> &middot; Tarnobrzeska 4, Starołęka, Warszawa
-          <p><span class="rating star"></span> 4.0 (15 opinii)</p>
-          <a href="#detailrepairshop">Więcej o warsztacie</a>
+          <div class="row align-items-center m-v-10">
+            <div class="rating"></div>
+            <span><strong class="text-dark">4.0</strong> (15 opinii)</span>
+          </div>
+          <a href="#repairshopdetail">Więcej o warsztacie</a>
         </dd>
+
       </dl>
 
       <div class="search-list-summary">
-        <div class="text-align-right">
-          <s class="old-price">1400zł</s><span class="price-discount">1000zł</span><br>
-          <small aria-label="Warsztat spełnia najwyższe standardy jakości usług. Cena promocyjna przysługuje tylko użytkownikom Dobrymechanik.pl" class="discount-info">(taniej o 400zł niż w ASO)</small><img src="/img/information-icon.png" alt="ikona informacji">
-          <div class="text-align-right">
-            <a href="#schedule-meeting"><button type="button" class="btn-primary-raised" aria-label="schedule meeting" name="schedule meeting" data-category="schedule meeting button">Umów wizytę</button></a>
-          </div>
-        </div>
+
+        <s class="old-price">1400zł</s><span class="price-discount">1000zł</span><br>
+        <small aria-label="Warsztat spełnia najwyższe standardy jakości usług. Cena promocyjna przysługuje tylko użytkownikom Dobrymechanik.pl" class="discount-info">(taniej o 400zł niż w ASO)</small><img src="/img/information-icon.png" alt="ikona informacji">
+        <a href="#schedule-meeting"><button type="button" class="btn-primary-raised" aria-label="schedule meeting" name="schedule meeting" data-category="schedule meeting button">Umów wizytę</button></a>
+
       </div>
 
     </article>
+    <!--  /search item-->
+
   </section>
+  <!--  search list-->
 
 
 </section>
 
-<aside id="map" class="sidebar-search">
-  <figure></figure>
+<aside id="map" class="aside-search-grid">
+  <embed>
+  <div class="map img-responsive">
+    <div class="map_canvas img-responsive">
+      <iframe width="800" height="900" id="gmap_canvas" src="https://maps.google.com/maps?q=Warsaw&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
+  </div>
 </aside>

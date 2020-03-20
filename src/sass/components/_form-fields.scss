@@ -7,7 +7,7 @@
   border-radius: $form-field-border-radius;
   border-style: $form-border-style;
   padding: $form-field-padding;
-  //display: $form-field-default-display;
+  margin-bottom: 1rem;
   cursor: $form-field-cursor;
   width: 100%;
 }
@@ -27,7 +27,7 @@
 
 //form-search
 .form-search {
-  background-image:url("https://img.icons8.com/small/24/000000/search.png");
+  background-image:url('/svg/icons/magnify.svg');
   background-repeat:no-repeat;
   background-position:left 1rem center;
   padding-left: 4rem;

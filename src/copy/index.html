@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl" region="pl">
 <head>
-	<link href="//fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap" rel="stylesheet" type="text/css">
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,7 @@
 <!--	/Open Graph Protocol -->
 
 <!--	[if lt IE 9]-->
-<!--	na obecnej stronie jest stara wersja-->
+<!--	spowalnia ładowanie strony-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 <!--	[endif]-->
 
@@ -37,10 +37,6 @@
 <!--	styles-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--	/styles-->
-
-<!--	html imports-->
-<!--	<link rel="import" href="/path/to/imports/stuff.html">-->
-<!--	/html imports-->
 </head>
 
 <body>
@@ -48,10 +44,11 @@
 	<!--	header-->
 	<header class="header-container">
 		<nav class="grid-container">
-			<a class="main-logo" href="https://dobrymechanik.pl"><img class="main-logo-img" src="/img/main-logo.png" alt="logo DobryMechanik.pl"></a>
+			<a class="main-logo" href="https://dobrymechanik.pl"><img class="main-logo-img" src="/img/logo/main-logo.png" alt="logo DobryMechanik.pl"></a>
 			<h3 class="slogan">Twój wiarygodny i zaufany doradca motoryzacyjny</h3>
 			<button type="button" class="btn-default-outline nav-btn" aria-label="for mechanics" name="for mechanics" data-category="for mechanics">Dla mechaników</button>
 		</nav>
+		<div id="progress-bar"></div>
 	</header>
 	<!--	/header-->
 
@@ -63,10 +60,6 @@
 	<script src="js/route.js"></script>
 	<script src="js/router.js"></script>
 	<script src="js/app.js"></script>
-
-	<script src="js/detects.js"></script>
-	<script src="js/another-file.js"></script>
-	<script src="js/main.polyfills.js"></script>
 	<!-- /Scripts -->
 </body>
 </html>

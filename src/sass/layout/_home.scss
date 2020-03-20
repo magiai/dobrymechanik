@@ -3,7 +3,7 @@
 #search-list{
 
   .rating {
-    background-image: url('/svg/star.svg');
+    background-image: url('/svg/icons/star.svg');
     filter: grayscale(50%);
     fill: $default-grey;
     background-repeat: repeat-x;
@@ -61,19 +61,6 @@
 
 }
 
-//map
-.map {
-  position: relative;
-  text-align: right;
-  margin-left: 4rem;
-  top: -4%;
-
-  .map_canvas {
-    overflow:hidden;
-    background:none !important;
-  }
-}
-
 @media only screen and (max-width: $breakpoint-tablet) {
 
   small[aria-label]:hover:after {
@@ -81,7 +68,7 @@
     top: -400%;
   }
 
-  #map {
+  #map, .map {
     display: none;
   }
 }
@@ -91,6 +78,19 @@
   small[aria-label]:hover:after {
     left: 110%;
     top: -400%;
+  }
+
+  //map
+  .map {
+    position: relative;
+    text-align: right;
+    margin-left: 4rem;
+    top: -4%;
+
+    .map_canvas {
+      overflow:hidden;
+      background:none !important;
+    }
   }
 
   .map-link {

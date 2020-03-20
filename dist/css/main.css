@@ -1,4 +1,4 @@
-/*! Dory Mechanik v0.0.1 | (c) 2020 Dominika Adamska | MIT License | http://link-to-your-git-repo.com */
+/*! Dory Mechanik v0.0.1 | (c) 2020 Dominika Adamska | MIT License | https://github.com/magiai/dobrymechanik */
 /* line 5, src/sass/abstracts/_reusables.scss */
 .text-dark {
   color: #323232 !important;
@@ -94,27 +94,32 @@
   padding-right: 0rem !important;
 }
 
-/* line 55, src/sass/abstracts/_reusables.scss */
+/* line 53, src/sass/abstracts/_reusables.scss */
+.p-t-0 {
+  padding-top: 0rem !important;
+}
+
+/* line 56, src/sass/abstracts/_reusables.scss */
 .pull-right {
   float: right;
 }
 
-/* line 56, src/sass/abstracts/_reusables.scss */
+/* line 57, src/sass/abstracts/_reusables.scss */
 .pull-left {
   float: left;
 }
 
-/* line 58, src/sass/abstracts/_reusables.scss */
+/* line 59, src/sass/abstracts/_reusables.scss */
 .text-align-right {
   text-align: right;
 }
 
-/* line 59, src/sass/abstracts/_reusables.scss */
+/* line 60, src/sass/abstracts/_reusables.scss */
 .text-align-left {
   text-align: left;
 }
 
-/* line 61, src/sass/abstracts/_reusables.scss */
+/* line 62, src/sass/abstracts/_reusables.scss */
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,7 +130,7 @@
           flex-direction: row;
 }
 
-/* line 66, src/sass/abstracts/_reusables.scss */
+/* line 67, src/sass/abstracts/_reusables.scss */
 .align-items-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,7 +140,7 @@
           align-items: center;
 }
 
-/* line 71, src/sass/abstracts/_reusables.scss */
+/* line 72, src/sass/abstracts/_reusables.scss */
 .justify-content-end {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,7 +151,7 @@
   justify-items: end;
 }
 
-/* line 78, src/sass/abstracts/_reusables.scss */
+/* line 79, src/sass/abstracts/_reusables.scss */
 .img-responsive {
   width: 100%;
   height: auto;
@@ -209,39 +214,52 @@ p {
 }
 
 /* line 47, src/sass/base/_base.scss */
+ul {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  margin-left: 0;
+  padding-left: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  list-style-type: none;
+}
+
+/* line 56, src/sass/base/_base.scss */
 h1, .h1 {
   font-size: 3rem !important;
   font-weight: 700;
   color: #323232 !important;
 }
 
-/* line 53, src/sass/base/_base.scss */
+/* line 62, src/sass/base/_base.scss */
 h2, .h2 {
   font-size: 2rem !important;
   font-weight: 700;
   color: #323232 !important;
 }
 
-/* line 59, src/sass/base/_base.scss */
+/* line 68, src/sass/base/_base.scss */
 h3, .h3 {
   font-size: 1.6rem !important;
   font-weight: 700;
   color: #323232 !important;
 }
 
-/* line 65, src/sass/base/_base.scss */
+/* line 74, src/sass/base/_base.scss */
 h4, .h4 {
   font-size: 1.4rem !important;
   color: #323232 !important;
 }
 
-/* line 70, src/sass/base/_base.scss */
+/* line 79, src/sass/base/_base.scss */
 h5 .h5 {
   font-size: 1.2rem !important;
   color: #323232 !important;
 }
 
-/* line 75, src/sass/base/_base.scss */
+/* line 84, src/sass/base/_base.scss */
 h6, .h6 {
   font-size: 1rem !important;
   color: #323232 !important;
@@ -260,7 +278,7 @@ button {
   -moz-appearance: none;
 }
 
-/* line 24, src/sass/components/_buttons.scss */
+/* line 22, src/sass/components/_buttons.scss */
 .btn-primary-raised {
   color: #fff;
   background-color: #176AE6;
@@ -268,30 +286,30 @@ button {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 24, src/sass/components/_buttons.scss */
+  /* line 22, src/sass/components/_buttons.scss */
   .btn-primary-raised {
     width: 100%;
   }
 }
 
-/* line 33, src/sass/components/_buttons.scss */
+/* line 31, src/sass/components/_buttons.scss */
 .btn-primary-raised:hover, .btn-primary-raised:focus {
   background-color: #1255b8;
 }
 
-/* line 37, src/sass/components/_buttons.scss */
+/* line 35, src/sass/components/_buttons.scss */
 .btn-primary-raised:disabled {
   background-color: #fdfeff;
 }
 
-/* line 42, src/sass/components/_buttons.scss */
+/* line 40, src/sass/components/_buttons.scss */
 .btn-primary-outline {
   color: #176AE6;
   border: 1px solid #176AE6;
   background-color: transparent;
 }
 
-/* line 24, src/sass/components/_buttons.scss */
+/* line 22, src/sass/components/_buttons.scss */
 .btn-default-raised {
   color: #fff;
   background-color: #555;
@@ -299,27 +317,221 @@ button {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 24, src/sass/components/_buttons.scss */
+  /* line 22, src/sass/components/_buttons.scss */
   .btn-default-raised {
     width: 100%;
   }
 }
 
-/* line 33, src/sass/components/_buttons.scss */
+/* line 31, src/sass/components/_buttons.scss */
 .btn-default-raised:hover, .btn-default-raised:focus {
   background-color: #3c3c3c;
 }
 
-/* line 37, src/sass/components/_buttons.scss */
+/* line 35, src/sass/components/_buttons.scss */
 .btn-default-raised:disabled {
   background-color: #fdfeff;
 }
 
-/* line 42, src/sass/components/_buttons.scss */
+/* line 40, src/sass/components/_buttons.scss */
 .btn-default-outline {
   color: #555;
   border: 1px solid #555;
   background-color: transparent;
+}
+
+/* line 47, src/sass/components/_buttons.scss */
+.btn-container {
+  padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 47, src/sass/components/_buttons.scss */
+  .btn-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    z-index: 1;
+  }
+  /* line 61, src/sass/components/_buttons.scss */
+  .btn-container button {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 47, src/sass/components/_buttons.scss */
+  .btn-container {
+    text-align: right;
+  }
+}
+
+/* line 4, src/sass/components/_cards.scss */
+.card-guarantee {
+  width: 100%;
+  height: auto;
+  background-color: #DEF3E7;
+  padding: 2rem;
+  border-bottom: 2px solid #00AB80;
+  font-size: 1.6rem !important;
+  font-weight: 500;
+  color: #323232 !important;
+}
+
+/* line 14, src/sass/components/_cards.scss */
+.card-guarantee ul :not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/* line 18, src/sass/components/_cards.scss */
+.card-guarantee li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 23, src/sass/components/_cards.scss */
+.card-guarantee .guarantee-icon {
+  height: 5rem;
+  width: auto;
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 4, src/sass/components/_cards.scss */
+  .card-guarantee {
+    margin-top: 3rem;
+  }
+}
+
+/* line 35, src/sass/components/_cards.scss */
+.user-information-card {
+  padding-bottom: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* line 39, src/sass/components/_cards.scss */
+.user-information-card .-info-title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* line 44, src/sass/components/_cards.scss */
+.user-information-card .-info-description {
+  color: #323232 !important;
+  font-weight: 500;
+}
+
+/* line 50, src/sass/components/_cards.scss */
+.user-information-card .user-data-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 55, src/sass/components/_cards.scss */
+.user-information-card .user-data-grid:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* line 59, src/sass/components/_cards.scss */
+.user-information-card .user-data-grid .user-data-description {
+  padding-top: 1.5rem;
+  grid-column: 1/4;
+}
+
+/* line 64, src/sass/components/_cards.scss */
+.user-information-card .user-data-grid .user-data-change {
+  grid-column: 4/5;
+  justify-self: end;
+}
+
+/* line 71, src/sass/components/_cards.scss */
+.user-information-card .service-info-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 1.5rem;
+}
+
+/* line 76, src/sass/components/_cards.scss */
+.user-information-card .service-info-grid .old-price-description {
+  justify-self: end;
+  text-align: right;
+}
+
+/* line 81, src/sass/components/_cards.scss */
+.user-information-card .service-info-grid .new-price-description {
+  justify-self: end;
+  text-align: right;
+}
+
+/* line 87, src/sass/components/_cards.scss */
+.user-information-card .service-info-summary {
+  background-color: #F7F8FA;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 0 !important;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  margin-bottom: -1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 101, src/sass/components/_cards.scss */
+  .-info-title {
+    font-size: 1.2rem !important;
+  }
+  /* line 105, src/sass/components/_cards.scss */
+  .service-description {
+    grid-column: 1/5;
+  }
+  /* line 106, src/sass/components/_cards.scss */
+  .old-price-description {
+    grid-column: 5/9;
+  }
+  /* line 107, src/sass/components/_cards.scss */
+  .new-price-description {
+    grid-column: 9/13;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 112, src/sass/components/_cards.scss */
+  .user-information-card {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  /* line 119, src/sass/components/_cards.scss */
+  .user-information-card .-info-title {
+    font-size: 1.4rem !important;
+  }
+  /* line 121, src/sass/components/_cards.scss */
+  .user-information-card .service-description {
+    grid-column: 1/7;
+  }
+  /* line 122, src/sass/components/_cards.scss */
+  .user-information-card .old-price-description {
+    grid-column: 7/10;
+  }
+  /* line 123, src/sass/components/_cards.scss */
+  .user-information-card .new-price-description {
+    grid-column: 10/13;
+  }
 }
 
 /* line 3, src/sass/components/_form-fields.scss */
@@ -330,6 +542,7 @@ button {
   border-radius: 0;
   border-style: none;
   padding: 1.5rem;
+  margin-bottom: 1rem;
   cursor: pointer;
   width: 100%;
 }
@@ -349,7 +562,7 @@ button {
 
 /* line 29, src/sass/components/_form-fields.scss */
 .form-search {
-  background-image: url("https://img.icons8.com/small/24/000000/search.png");
+  background-image: url("/svg/icons/magnify.svg");
   background-repeat: no-repeat;
   background-position: left 1rem center;
   padding-left: 4rem;
@@ -372,7 +585,7 @@ button {
 
 @media only screen and (max-width: 768px) {
   /* line 22, src/sass/layout/_grid.scss */
-  .container, .header-container {
+  .header-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -443,37 +656,50 @@ button {
   .aside-search-grid, .aside-steps-grid {
     grid-column: 8/13;
   }
+  /* line 77, src/sass/layout/_grid.scss */
+  .steps-grid, .aside-steps-grid {
+    padding-top: 2rem;
+  }
+  /* line 81, src/sass/layout/_grid.scss */
+  .aside-steps-grid {
+    padding-left: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 82, src/sass/layout/_grid.scss */
+  /* line 90, src/sass/layout/_grid.scss */
   .main-logo {
     grid-column: 2/4;
   }
-  /* line 86, src/sass/layout/_grid.scss */
+  /* line 94, src/sass/layout/_grid.scss */
   .slogan {
     grid-column: 4/8;
   }
-  /* line 90, src/sass/layout/_grid.scss */
+  /* line 98, src/sass/layout/_grid.scss */
   .nav-btn {
     grid-column: 8/12;
     justify-self: end;
   }
-  /* line 96, src/sass/layout/_grid.scss */
+  /* line 104, src/sass/layout/_grid.scss */
   .home-search-grid {
     grid-column: 2/8;
   }
-  /* line 97, src/sass/layout/_grid.scss */
+  /* line 105, src/sass/layout/_grid.scss */
   .aside-search-grid {
     grid-column: 8/12;
   }
-  /* line 100, src/sass/layout/_grid.scss */
+  /* line 108, src/sass/layout/_grid.scss */
   .steps-grid {
     grid-column: 3/8;
   }
-  /* line 101, src/sass/layout/_grid.scss */
+  /* line 110, src/sass/layout/_grid.scss */
   .aside-steps-grid {
     grid-column: 8/11;
+    padding-left: 5rem;
+  }
+  /* line 115, src/sass/layout/_grid.scss */
+  .steps-grid, .aside-steps-grid {
+    padding-top: 4rem;
   }
 }
 
@@ -489,48 +715,49 @@ button {
 }
 
 /* line 12, src/sass/layout/_header.scss */
-.header-container #progress-bar {
-  position: absolute;
-  bottom: 0;
-  background-color: red;
-  height: 5px;
-  width: 100px;
-}
-
-/* line 20, src/sass/layout/_header.scss */
 .header-container .grid-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-/* line 24, src/sass/layout/_header.scss */
+/* line 16, src/sass/layout/_header.scss */
 .header-container .main-logo-img {
   height: 4rem;
   width: auto;
 }
 
-/* line 29, src/sass/layout/_header.scss */
+/* line 21, src/sass/layout/_header.scss */
 .header-container .slogan {
   font-weight: 300;
   color: #6b707d;
 }
 
+/* line 26, src/sass/layout/_header.scss */
+.header-container #progress-bar {
+  display: none;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  height: 0.4rem;
+  background-color: #176AE6;
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 37, src/sass/layout/_header.scss */
+  /* line 38, src/sass/layout/_header.scss */
   .main-logo-img {
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
-  /* line 42, src/sass/layout/_header.scss */
+  /* line 43, src/sass/layout/_header.scss */
   nav :not(.main-logo):not(.main-logo-img) {
     display: none;
   }
 }
 
-/* line 5, src/sass/layout/_home-search.scss */
+/* line 5, src/sass/layout/_home.scss */
 #search-list .rating {
-  background-image: url("/svg/star.svg");
+  background-image: url("/svg/icons/star.svg");
   -webkit-filter: grayscale(50%);
           filter: grayscale(50%);
   fill: #555;
@@ -541,24 +768,24 @@ button {
   width: 12rem;
 }
 
-/* line 16, src/sass/layout/_home-search.scss */
+/* line 16, src/sass/layout/_home.scss */
 #search-list .search-list-summary {
   text-align: right;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 16, src/sass/layout/_home-search.scss */
+  /* line 16, src/sass/layout/_home.scss */
   #search-list .search-list-summary {
     margin-top: 2rem;
   }
 }
 
-/* line 23, src/sass/layout/_home-search.scss */
+/* line 23, src/sass/layout/_home.scss */
 #search-list .search-list-summary .old-price {
   font-size: 1.4rem !important;
 }
 
-/* line 27, src/sass/layout/_home-search.scss */
+/* line 27, src/sass/layout/_home.scss */
 #search-list .search-list-summary .price-discount {
   color: #e74c3c;
   letter-spacing: 0.2rem;
@@ -567,7 +794,7 @@ button {
   margin-left: 1rem;
 }
 
-/* line 35, src/sass/layout/_home-search.scss */
+/* line 35, src/sass/layout/_home.scss */
 #search-list .search-list-summary .discount-info {
   color: #e74c3c;
   font-size: 1.4rem !important;
@@ -575,12 +802,12 @@ button {
   margin-bottom: 0;
 }
 
-/* line 43, src/sass/layout/_home-search.scss */
+/* line 43, src/sass/layout/_home.scss */
 #search-list .search-list-summary small:hover {
   position: relative;
 }
 
-/* line 47, src/sass/layout/_home-search.scss */
+/* line 47, src/sass/layout/_home.scss */
 #search-list .search-list-summary small[aria-label]:hover:after {
   background: #6b707d;
   color: #fff;
@@ -595,45 +822,46 @@ button {
   z-index: 1;
 }
 
-/* line 65, src/sass/layout/_home-search.scss */
-.map {
-  position: relative;
-  text-align: right;
-  margin-left: 4rem;
-  top: -4%;
-}
-
-/* line 71, src/sass/layout/_home-search.scss */
-.map .map_canvas {
-  overflow: hidden;
-  background: none !important;
-}
-
 @media only screen and (max-width: 768px) {
-  /* line 79, src/sass/layout/_home-search.scss */
+  /* line 66, src/sass/layout/_home.scss */
   small[aria-label]:hover:after {
     left: -200%;
     top: -400%;
   }
-  /* line 84, src/sass/layout/_home-search.scss */
-  #map {
+  /* line 71, src/sass/layout/_home.scss */
+  #map, .map {
     display: none;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 91, src/sass/layout/_home-search.scss */
+  /* line 78, src/sass/layout/_home.scss */
   small[aria-label]:hover:after {
     left: 110%;
     top: -400%;
   }
-  /* line 96, src/sass/layout/_home-search.scss */
+  /* line 84, src/sass/layout/_home.scss */
+  .map {
+    position: relative;
+    text-align: right;
+    margin-left: 4rem;
+    top: -4%;
+  }
+  /* line 90, src/sass/layout/_home.scss */
+  .map .map_canvas {
+    overflow: hidden;
+    background: none !important;
+  }
+  /* line 96, src/sass/layout/_home.scss */
   .map-link {
     display: none;
   }
 }
 
-/* line 3, src/sass/layout/_step-one.scss */
+/* line 3, src/sass/layout/_steps.scss */
 .steps-indicator {
   font-weight: 500;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  padding-top: 0;
 }

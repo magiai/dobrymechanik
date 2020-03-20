@@ -34,7 +34,6 @@ Router.prototype = {
                 var route = r[i];
 
                 if(route.isActiveRoute(window.location.hash.substr(1))) {
-                    console.log(route)
                     scope.goToRoute(route.htmlName, route.stepValue);
                 }
             }
@@ -60,8 +59,15 @@ Router.prototype = {
             xhttp.send();
 
             //progress bar
-            const progressBar = document.getElementById('progress-bar');
-            console.log(stepValue);
+            let progressBar = document.getElementById('progress-bar');
+            //to modify if number of steps will be changed
+            let widthLength = stepValue * 25 + '%';
+
+            if (stepValue !== 0) {
+                progressBar.style.display = 'block';
+                progressBar.style.width = widthLength;
+            }
+
         })(this);
     }
 };

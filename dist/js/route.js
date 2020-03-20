@@ -1,4 +1,4 @@
-/*! Dory Mechanik v0.0.1 | (c) 2020 Dominika Adamska | MIT License | http://link-to-your-git-repo.com */
+/*! Dory Mechanik v0.0.1 | (c) 2020 Dominika Adamska | MIT License | https://github.com/magiai/dobrymechanik */
 'use stict';
 
 function Route(name, htmlName, stepValue, defaultRoute) {

@@ -32,11 +32,11 @@ const paths = {
 		output: 'dist/css/'
 	},
 	images: {
-		input: 'src/img/*.{png, jpg}',
+		input: 'src/img/**/*.{png, jpg}',
 		output: 'dist/img/'
 	},
 	svgs: {
-		input: 'src/svg/*.svg',
+		input: 'src/svg/**/*.svg',
 		output: 'dist/svg/'
 	},
 	copy: {

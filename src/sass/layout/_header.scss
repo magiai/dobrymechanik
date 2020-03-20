@@ -9,14 +9,6 @@
   width: 100%;
   border-bottom: 0.1rem solid $divider-color;
 
-  #progress-bar {
-    position: absolute;
-    bottom: 0;
-    background-color: red;
-    height: 5px;
-    width: 100px;
-  }
-
   .grid-container {
     align-items: center;
   }
@@ -29,6 +21,15 @@
   .slogan {
     font-weight: $font-weight-base;
     color: $main-text-color;
+  }
+
+  #progress-bar {
+    display: none;
+    position: absolute;
+    bottom: -0.4rem;
+    left: 0;
+    height: 0.4rem;
+    background-color: $brand-color;
   }
 }
 

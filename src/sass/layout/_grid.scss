@@ -52,7 +52,7 @@
   .slogan { grid-column: 3/10; }
   .nav-btn { grid-column: 10/13; }
 
-  //.steps-grid, .aside-steps-grid { padding-top: 2rem; }
+  .steps-grid, .aside-steps-grid, .steps-grid-revert, .user-summary-grid { padding-top: 2rem; }
 
   //main container
   .steps-grid, .steps-grid-revert { grid-column: 1/8; }
@@ -84,7 +84,7 @@
     padding-left: 5rem;
   }
 
-  //.steps-grid, .aside-steps-grid, .user-summary-grid {
-  //  padding-top: 4rem;
-  //}
+  .steps-grid, .aside-steps-grid, .steps-grid-revert, .user-summary-grid {
+    padding-top: 4rem;
+  }
 }

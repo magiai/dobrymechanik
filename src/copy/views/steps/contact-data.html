@@ -12,7 +12,7 @@
       <dt class="-info-title user-data-title">Informacje o aucie</dt>
 
       <dd class="-info-description user-data-description">Mazda MX-5 2.0, 2012</dd>
-      <a class="user-data-change" href="#changeuserdata">Zmień</a>
+      <a class="user-data-change" href="#change-user-data">Zmień</a>
     </dl>
 
     <dl class="small-service-info-grid">
@@ -38,13 +38,25 @@
 
   <h3>Dane kontaktowe:</h3>
 
-  <form action="search" method="GET" accept-charset="utf-8">
-    <input type="text" placeholder="Imię i nazwisko" class="form-field">
-    <input type="text" placeholder="Adres" class="form-field">
-    <input type="text" placeholder="Imię i nazwisko" class="form-field">
+  <form name="userDataForm" action="" accept-charset="utf-8" onsubmit="return validateForm()">
+    <input type="text" placeholder="Imię i nazwisko" class="form-field" name="name">
+    <div id="validation-name" class="validator-hint">
+      <img src="/img/icons/information-icon.png" alt="ikona informacji">
+      <small class="validator-text">podaj poprawne imię i nazwisko</small>
+    </div>
+    <input type="text" placeholder="Adres e-mail" class="form-field" name="email">
+    <div id="validation-email" class="validator-hint">
+      <img src="/img/icons/information-icon.png" alt="ikona informacji">
+      <small class="validator-text">podaj poprawny adres e-mail</small>
+    </div>
+    <input type="text" placeholder="Numer telefonu" class="form-field" name="phone">
+    <div id="validation-phone" class="validator-hint">
+      <img src="/img/icons/information-icon.png" alt="ikona informacji">
+      <small class="validator-text">podaj poprawny numer telefonu</small>
+    </div>
 
     <div class="btn-container">
-      <a href="#verification-code"><button type="button" class="btn-primary-raised" aria-label="schedule meeting" name="verification code" data-category="verification code">Wyślij kod</button></a>
+      <button type="submit" class="btn-primary-raised" value="submit" aria-label="schedule meeting" name="verificationCode" data-category="verification code">Wyślij kod</button>
     </div>
   </form>
 </section>

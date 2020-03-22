@@ -2,25 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="925e7e50-7ec7-4bad-8909-4739604133b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/js/steps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/steps.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/steps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/views/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/views/steps/choose-date.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/views/steps/choose-date.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/views/steps/contact-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/views/steps/contact-data.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/views/steps/schedule-meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/views/steps/schedule-meeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/views/steps/verification-code.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/views/steps/verification-code.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/copy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/copy/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy/views/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/copy/views/steps/choose-date.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy/views/steps/choose-date.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/copy/views/steps/contact-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy/views/steps/contact-data.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/copy/views/steps/schedule-meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy/views/steps/schedule-meeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/components/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/copy/views/steps/verification-code.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy/views/steps/verification-code.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/abstracts/_reusables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/abstracts/_reusables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/components/_form-fields.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_form-fields.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/components/_tooltip.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_tooltip.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/layout/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/layout/_grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/layout/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/layout/_home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/layout/_steps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/layout/_steps.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584530475904</updated>
-      <workItem from="1584530482482" duration="145135000" />
+      <workItem from="1584530482482" duration="158747000" />
     </task>
     <servers />
   </component>
@@ -99,10 +102,10 @@
       <screen x="2048" y="0" width="1920" height="1040" />
     </state>
     <state x="2629" y="41" width="758" height="957" key="find.popup/2048.0.1920.1040/0.0.2048.1112@2048.0.1920.1040" timestamp="1584531234033" />
-    <state x="657" y="257" key="run.anything.popup" timestamp="1584733895484">
+    <state x="657" y="257" key="run.anything.popup" timestamp="1584918748395">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="657" y="257" key="run.anything.popup/2048.0.1920.1040/0.0.2048.1112@0.0.2048.1112" timestamp="1584733895484" />
+    <state x="657" y="257" key="run.anything.popup/2048.0.1920.1040/0.0.2048.1112@0.0.2048.1112" timestamp="1584918748395" />
     <state x="2664" y="240" key="run.anything.popup/2048.0.1920.1040/0.0.2048.1112@2048.0.1920.1040" timestamp="1584555487350" />
     <state x="2692" y="227" width="672" height="635" key="search.everywhere.popup" timestamp="1584893345051">
       <screen x="2048" y="0" width="1920" height="1040" />

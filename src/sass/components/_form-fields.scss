@@ -12,6 +12,21 @@
   width: 100%;
 }
 
+.validator-hint {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+
+  &#validation-name, &#validation-email, &#validation-phone{
+    display: none;
+  }
+
+  .validator-text {
+    margin-left: 0.5rem;
+    color: $warning-text-color;
+  }
+}
+
 //form select
 .form-select {
   @extend .form-field;

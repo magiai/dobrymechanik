@@ -12,7 +12,7 @@
       <dt class="-info-title user-data-title">Informacje o aucie</dt>
 
       <dd class="-info-description user-data-description">Mazda MX-5 2.0, 2012</dd>
-      <a class="user-data-change" href="#changeuserdata">Zmień</a>
+      <a class="user-data-change" href="#change-user-data">Zmień</a>
     </dl>
 
     <dl class="small-service-info-grid">
@@ -38,20 +38,20 @@
 
   <form action="">
     <div class="date-field">
-      <input class="radio-button" id="forty-eight-hours" type="radio" name="forty eight hours" value="immediate">
+      <input class="radio-button" id="forty-eight-hours" type="radio" name="hours" value="immediate">
       <label for="forty-eight-hours" class="text-dark">Jak najszybciej (najbliższe 48 godzin)</label>
       <p>Jeśli wybrany warsztat nie będzie mógł przyjąć Twojego samochodu w ciągu 48h,
         nasz konsultant poszuka dla Ciebie warsztatu oferującego usługi na podobnym poziomie praz w podobnej cenie.</p>
     </div>
 
     <div class="date-field">
-      <input class="radio-button" id="choose-hours" type="radio" name="choose hours" value="choose">
+      <input class="radio-button" id="choose-hours" type="radio" name="hours" value="choose" onclick="showCalendar()">
       <label for="choose-hours" class="text-dark">Chcę wskazać dostępność w kalendarzu</label>
-<!--      <div class="calendar">Tutaj będzie kalendarz</div>-->
+      <div id="calendar">kalendarz</div>
     </div>
 
     <div class="btn-container">
-      <a href="#contact-data"><button type="button" class="btn-primary-raised" aria-label="schedule meeting" name="schedule meeting" data-category="schedule meeting button">Dalej</button></a>
+      <a href="#contact-data"><button type="button" class="btn-primary-raised" aria-label="schedule meeting" name="chooseDate" data-category="schedule meeting button">Dalej</button></a>
     </div>
   </form>
 

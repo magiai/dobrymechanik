@@ -2,23 +2,8 @@
 
 #search-list{
 
-  .rating {
-    background-image: url('/svg/icons/star.svg');
-    filter: grayscale(50%);
-    fill: $default-grey;
-    background-repeat: repeat-x;
-    background-position: 0;
-    background-size: 2.4rem 2.4rem;
-    height: 2.4rem;
-    width: 12rem;
-  }
-
   .search-list-summary {
     text-align: right;
-
-    @media only screen and (max-width: $breakpoint-tablet) {
-      margin-top: 2rem;
-    }
 
     .old-price {
       font-size: $h4-font-size;
@@ -61,7 +46,19 @@
 
 }
 
+//search list grid
+.search-list-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1rem;
+}
+
+//mobile
 @media only screen and (max-width: $breakpoint-tablet) {
+
+  .search-list-summary {
+    margin-top: 2rem;
+  }
 
   small[aria-label]:hover:after {
     left: -200%;
@@ -71,8 +68,28 @@
   #map, .map {
     display: none;
   }
+
+  //search list grid
+  .search-list-img { grid-column: 1/2; }
+  .search-list-text { grid-column: 2/5; }
+  .search-list-summary { grid-column: 2/5; }
 }
 
+//tablet only
+@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+
+  //main container
+  .home-search-grid {
+    grid-column: 1/8;
+  }
+
+  //aside container
+  .aside-search-grid {
+    grid-column: 8/13;
+  }
+}
+
+//tablet & desktop
 @media only screen and (min-width: $breakpoint-tablet) {
 
   small[aria-label]:hover:after {
@@ -97,4 +114,14 @@
     display: none;
   }
 
+  //home search page
+  .home-search-grid { grid-column: 2/8; }
+  .aside-search-grid { grid-column: 8/12; }
+
+  //search list grid
+  .search-list-grid {
+    .search-list-img { grid-column: 1/2; }
+    .search-list-text { grid-column: 2/4; }
+    .search-list-summary { grid-column: 4/5; }
+  }
 }

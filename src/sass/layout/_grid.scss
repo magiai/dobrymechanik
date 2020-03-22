@@ -10,12 +10,6 @@
   padding: 1rem;
 }
 
-.search-list-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 1rem;
-}
-
 //mobile only
 @media only screen and (max-width: $breakpoint-tablet) {
 
@@ -24,24 +18,14 @@
     justify-content: center;
   }
 
-  .aside-steps-grid {
-    padding-bottom: 7.4rem;
-  }
-
-  //search list
-  .search-list-img { grid-column: 1/2; }
-  .search-list-text { grid-column: 2/5; }
-  .search-list-summary { grid-column: 2/5; }
-}
-
-//mobile & tablet
-@media only screen and (max-width: $breakpoint-desktop) {
-
   .container {
     padding-right: 2rem;
     padding-left: 2rem;
   }
+
+  .aside-steps-grid { padding-bottom: 7.4rem; }
 }
+
 
 //tablet & desktop
 @media only screen and (min-width: $breakpoint-tablet) {
@@ -50,13 +34,6 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-  }
-
-  //search list grid
-  .search-list-grid {
-    .search-list-img { grid-column: 1/2; }
-    .search-list-text { grid-column: 2/4; }
-    .search-list-summary { grid-column: 4/5; }
   }
 }
 
@@ -68,21 +45,14 @@
   .slogan { grid-column: 3/10; }
   .nav-btn { grid-column: 10/13; }
 
+  .steps-grid, .aside-steps-grid { padding-top: 2rem; }
+
   //main container
-  .home-search-grid, .steps-grid {
-    grid-column: 1/8;
-  }
+  .steps-grid { grid-column: 1/8; }
 
   //aside container
-  .aside-search-grid, .aside-steps-grid {
-    grid-column: 8/13;
-  }
-
-  .steps-grid, .aside-steps-grid {
-    padding-top: 2rem;
-  }
-
   .aside-steps-grid {
+    grid-column: 8/13;
     padding-left: 2rem;
   }
 }
@@ -91,22 +61,13 @@
 @media only screen and (min-width: $breakpoint-desktop) {
 
   //header
-  .main-logo {
-    grid-column: 2/4;
-  }
-
-  .slogan {
-    grid-column: 4/8;
-  }
+  .main-logo { grid-column: 2/4; }
+  .slogan { grid-column: 4/8; }
 
   .nav-btn {
     grid-column: 8/12;
     justify-self: end;
   }
-
-  //home search page
-  .home-search-grid { grid-column: 2/8; }
-  .aside-search-grid { grid-column: 8/12; }
 
   //steps pages
   .steps-grid { grid-column: 3/8 }

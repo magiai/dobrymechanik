@@ -177,7 +177,7 @@ html {
 body {
   font-family: Rubik, Helvetica, sans-serif;
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #6b707d;
   margin: 0 auto;
 }
@@ -198,27 +198,28 @@ dl {
   -webkit-margin-after: 0;
           margin-block-end: 0;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
-/* line 33, src/sass/base/_base.scss */
+/* line 34, src/sass/base/_base.scss */
 dd {
   -webkit-margin-start: 0;
           margin-inline-start: 0;
   margin-left: 0;
 }
 
-/* line 38, src/sass/base/_base.scss */
+/* line 39, src/sass/base/_base.scss */
 a {
   color: #176AE6;
   text-decoration: none;
 }
 
-/* line 43, src/sass/base/_base.scss */
+/* line 44, src/sass/base/_base.scss */
 p {
   line-height: 1.5;
 }
 
-/* line 47, src/sass/base/_base.scss */
+/* line 48, src/sass/base/_base.scss */
 ul {
   -webkit-margin-before: 0;
           margin-block-start: 0;
@@ -231,40 +232,40 @@ ul {
   list-style-type: none;
 }
 
-/* line 56, src/sass/base/_base.scss */
+/* line 57, src/sass/base/_base.scss */
 h1, .h1 {
   font-size: 3rem !important;
   font-weight: 700;
   color: #323232 !important;
 }
 
-/* line 62, src/sass/base/_base.scss */
+/* line 63, src/sass/base/_base.scss */
 h2, .h2 {
   font-size: 2rem !important;
   font-weight: 700;
   color: #323232 !important;
 }
 
-/* line 68, src/sass/base/_base.scss */
+/* line 69, src/sass/base/_base.scss */
 h3, .h3 {
   font-size: 1.6rem !important;
   font-weight: 700;
   color: #323232 !important;
 }
 
-/* line 74, src/sass/base/_base.scss */
+/* line 75, src/sass/base/_base.scss */
 h4, .h4 {
   font-size: 1.4rem !important;
   color: #323232 !important;
 }
 
-/* line 79, src/sass/base/_base.scss */
+/* line 80, src/sass/base/_base.scss */
 h5 .h5 {
   font-size: 1.2rem !important;
   color: #323232 !important;
 }
 
-/* line 84, src/sass/base/_base.scss */
+/* line 85, src/sass/base/_base.scss */
 h6, .h6 {
   font-size: 1rem !important;
   color: #323232 !important;
@@ -419,122 +420,125 @@ button {
 }
 
 /* line 35, src/sass/components/_cards.scss */
-.user-information-card {
+.user-data-card {
   padding-bottom: 1.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 /* line 39, src/sass/components/_cards.scss */
-.user-information-card .-info-title {
+.user-data-card .-info-title {
   text-transform: uppercase;
-  font-weight: 500;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
-/* line 44, src/sass/components/_cards.scss */
-.user-information-card .-info-description {
+/* line 45, src/sass/components/_cards.scss */
+.user-data-card .-info-description {
   color: #323232 !important;
+}
+
+/* line 49, src/sass/components/_cards.scss */
+.user-data-card .-info-summary {
+  color: #e74c3c;
+  text-align: right;
   font-weight: 500;
 }
 
-/* line 50, src/sass/components/_cards.scss */
-.user-information-card .user-data-grid {
+/* line 56, src/sass/components/_cards.scss */
+.user-data-card .user-data-grid, .user-data-card .small-service-info-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-/* line 55, src/sass/components/_cards.scss */
-.user-information-card .user-data-grid:not(:last-of-type) {
+/* line 60, src/sass/components/_cards.scss */
+.user-data-card .user-data-grid:not(:last-of-type), .user-data-card .small-service-info-grid:not(:last-of-type) {
+  padding-bottom: 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-/* line 59, src/sass/components/_cards.scss */
-.user-information-card .user-data-grid .user-data-description {
-  padding-top: 1.5rem;
+/* line 65, src/sass/components/_cards.scss */
+.user-data-card .user-data-grid .user-data-title, .user-data-card .user-data-grid .small-service-title, .user-data-card .small-service-info-grid .user-data-title, .user-data-card .small-service-info-grid .small-service-title {
+  grid-column: 1/5;
+}
+
+/* line 69, src/sass/components/_cards.scss */
+.user-data-card .user-data-grid .user-data-description, .user-data-card .user-data-grid .small-service-description, .user-data-card .small-service-info-grid .user-data-description, .user-data-card .small-service-info-grid .small-service-description {
   grid-column: 1/4;
 }
 
-/* line 64, src/sass/components/_cards.scss */
-.user-information-card .user-data-grid .user-data-change {
+/* line 73, src/sass/components/_cards.scss */
+.user-data-card .user-data-grid .user-data-change, .user-data-card .user-data-grid .small-service-summary, .user-data-card .small-service-info-grid .user-data-change, .user-data-card .small-service-info-grid .small-service-summary {
   grid-column: 4/5;
   justify-self: end;
 }
 
-/* line 71, src/sass/components/_cards.scss */
-.user-information-card .service-info-grid {
+/* line 78, src/sass/components/_cards.scss */
+.user-data-card .user-data-grid .small-service-description, .user-data-card .small-service-info-grid .small-service-description {
+  margin-bottom: 1rem;
+}
+
+/* line 84, src/sass/components/_cards.scss */
+.user-data-card .service-info-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   padding-top: 1.5rem;
 }
 
-/* line 76, src/sass/components/_cards.scss */
-.user-information-card .service-info-grid .old-price-description {
+/* line 89, src/sass/components/_cards.scss */
+.user-data-card .service-info-grid .old-price-description, .user-data-card .service-info-grid .new-price-description {
   justify-self: end;
   text-align: right;
 }
 
-/* line 81, src/sass/components/_cards.scss */
-.user-information-card .service-info-grid .new-price-description {
-  justify-self: end;
-  text-align: right;
-}
-
-/* line 87, src/sass/components/_cards.scss */
-.user-information-card .service-info-summary {
+/* line 95, src/sass/components/_cards.scss */
+.user-data-card .service-info-summary {
   background-color: #F7F8FA;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-top: 0 !important;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-  margin-bottom: -1.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  margin: 0 -1.5rem -1.5rem -1.5rem;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 101, src/sass/components/_cards.scss */
+  /* line 104, src/sass/components/_cards.scss */
   .-info-title {
     font-size: 1.2rem !important;
   }
-  /* line 105, src/sass/components/_cards.scss */
+  /* line 108, src/sass/components/_cards.scss */
   .service-description {
     grid-column: 1/5;
   }
-  /* line 106, src/sass/components/_cards.scss */
+  /* line 109, src/sass/components/_cards.scss */
   .old-price-description {
     grid-column: 5/9;
   }
-  /* line 107, src/sass/components/_cards.scss */
+  /* line 110, src/sass/components/_cards.scss */
   .new-price-description {
     grid-column: 9/13;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 112, src/sass/components/_cards.scss */
-  .user-information-card {
+  /* line 115, src/sass/components/_cards.scss */
+  .user-data-card {
     border-left: 1px solid rgba(0, 0, 0, 0.12);
     border-right: 1px solid rgba(0, 0, 0, 0.12);
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-  /* line 119, src/sass/components/_cards.scss */
-  .user-information-card .-info-title {
+  /* line 122, src/sass/components/_cards.scss */
+  .user-data-card .-info-title {
     font-size: 1.4rem !important;
   }
-  /* line 121, src/sass/components/_cards.scss */
-  .user-information-card .service-description {
+  /* line 124, src/sass/components/_cards.scss */
+  .user-data-card .service-description {
     grid-column: 1/7;
   }
-  /* line 122, src/sass/components/_cards.scss */
-  .user-information-card .old-price-description {
+  /* line 125, src/sass/components/_cards.scss */
+  .user-data-card .old-price-description {
     grid-column: 7/10;
   }
-  /* line 123, src/sass/components/_cards.scss */
-  .user-information-card .new-price-description {
+  /* line 126, src/sass/components/_cards.scss */
+  .user-data-card .new-price-description {
     grid-column: 10/13;
   }
 }
@@ -575,21 +579,27 @@ button {
   outline: 0;
 }
 
+/* line 3, src/sass/components/_rating.scss */
+.rating {
+  background-image: url("/svg/icons/star.svg");
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  fill: #555;
+  background-repeat: repeat-x;
+  background-position: 0;
+  background-size: 2.4rem 2.4rem;
+  height: 2.4rem;
+  width: 12rem;
+}
+
 /* line 8, src/sass/layout/_grid.scss */
 .container {
   margin-top: 11rem;
   padding: 1rem;
 }
 
-/* line 13, src/sass/layout/_grid.scss */
-.search-list-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 1rem;
-}
-
 @media only screen and (max-width: 768px) {
-  /* line 22, src/sass/layout/_grid.scss */
+  /* line 16, src/sass/layout/_grid.scss */
   .header-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -598,115 +608,77 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 27, src/sass/layout/_grid.scss */
-  .aside-steps-grid {
-    padding-bottom: 7.4rem;
-  }
-  /* line 32, src/sass/layout/_grid.scss */
-  .search-list-img {
-    grid-column: 1/2;
-  }
-  /* line 33, src/sass/layout/_grid.scss */
-  .search-list-text {
-    grid-column: 2/5;
-  }
-  /* line 34, src/sass/layout/_grid.scss */
-  .search-list-summary {
-    grid-column: 2/5;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  /* line 40, src/sass/layout/_grid.scss */
+  /* line 21, src/sass/layout/_grid.scss */
   .container {
     padding-right: 2rem;
     padding-left: 2rem;
   }
+  /* line 26, src/sass/layout/_grid.scss */
+  .aside-steps-grid {
+    padding-bottom: 7.4rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 50, src/sass/layout/_grid.scss */
+  /* line 34, src/sass/layout/_grid.scss */
   .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
-  /* line 57, src/sass/layout/_grid.scss */
-  .search-list-grid .search-list-img {
-    grid-column: 1/2;
-  }
-  /* line 58, src/sass/layout/_grid.scss */
-  .search-list-grid .search-list-text {
-    grid-column: 2/4;
-  }
-  /* line 59, src/sass/layout/_grid.scss */
-  .search-list-grid .search-list-summary {
-    grid-column: 4/5;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 67, src/sass/layout/_grid.scss */
+  /* line 44, src/sass/layout/_grid.scss */
   .main-logo {
     grid-column: 1/3;
   }
-  /* line 68, src/sass/layout/_grid.scss */
+  /* line 45, src/sass/layout/_grid.scss */
   .slogan {
     grid-column: 3/10;
   }
-  /* line 69, src/sass/layout/_grid.scss */
+  /* line 46, src/sass/layout/_grid.scss */
   .nav-btn {
     grid-column: 10/13;
   }
-  /* line 72, src/sass/layout/_grid.scss */
-  .home-search-grid, .steps-grid {
-    grid-column: 1/8;
-  }
-  /* line 77, src/sass/layout/_grid.scss */
-  .aside-search-grid, .aside-steps-grid {
-    grid-column: 8/13;
-  }
-  /* line 81, src/sass/layout/_grid.scss */
+  /* line 48, src/sass/layout/_grid.scss */
   .steps-grid, .aside-steps-grid {
     padding-top: 2rem;
   }
-  /* line 85, src/sass/layout/_grid.scss */
+  /* line 51, src/sass/layout/_grid.scss */
+  .steps-grid {
+    grid-column: 1/8;
+  }
+  /* line 54, src/sass/layout/_grid.scss */
   .aside-steps-grid {
+    grid-column: 8/13;
     padding-left: 2rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 94, src/sass/layout/_grid.scss */
+  /* line 64, src/sass/layout/_grid.scss */
   .main-logo {
     grid-column: 2/4;
   }
-  /* line 98, src/sass/layout/_grid.scss */
+  /* line 65, src/sass/layout/_grid.scss */
   .slogan {
     grid-column: 4/8;
   }
-  /* line 102, src/sass/layout/_grid.scss */
+  /* line 67, src/sass/layout/_grid.scss */
   .nav-btn {
     grid-column: 8/12;
     justify-self: end;
   }
-  /* line 108, src/sass/layout/_grid.scss */
-  .home-search-grid {
-    grid-column: 2/8;
-  }
-  /* line 109, src/sass/layout/_grid.scss */
-  .aside-search-grid {
-    grid-column: 8/12;
-  }
-  /* line 112, src/sass/layout/_grid.scss */
+  /* line 73, src/sass/layout/_grid.scss */
   .steps-grid {
     grid-column: 3/8;
   }
-  /* line 114, src/sass/layout/_grid.scss */
+  /* line 75, src/sass/layout/_grid.scss */
   .aside-steps-grid {
     grid-column: 8/11;
     padding-left: 5rem;
   }
-  /* line 119, src/sass/layout/_grid.scss */
+  /* line 80, src/sass/layout/_grid.scss */
   .steps-grid, .aside-steps-grid {
     padding-top: 4rem;
   }
@@ -738,7 +710,7 @@ button {
 
 /* line 21, src/sass/layout/_header.scss */
 .header-container .slogan {
-  font-weight: 300;
+  font-weight: 400;
   color: #6b707d;
 }
 
@@ -765,36 +737,16 @@ button {
 }
 
 /* line 5, src/sass/layout/_home.scss */
-#search-list .rating {
-  background-image: url("/svg/icons/star.svg");
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
-  fill: #555;
-  background-repeat: repeat-x;
-  background-position: 0;
-  background-size: 2.4rem 2.4rem;
-  height: 2.4rem;
-  width: 12rem;
-}
-
-/* line 16, src/sass/layout/_home.scss */
 #search-list .search-list-summary {
   text-align: right;
 }
 
-@media only screen and (max-width: 768px) {
-  /* line 16, src/sass/layout/_home.scss */
-  #search-list .search-list-summary {
-    margin-top: 2rem;
-  }
-}
-
-/* line 23, src/sass/layout/_home.scss */
+/* line 8, src/sass/layout/_home.scss */
 #search-list .search-list-summary .old-price {
   font-size: 1.4rem !important;
 }
 
-/* line 27, src/sass/layout/_home.scss */
+/* line 12, src/sass/layout/_home.scss */
 #search-list .search-list-summary .price-discount {
   color: #e74c3c;
   letter-spacing: 0.2rem;
@@ -803,7 +755,7 @@ button {
   margin-left: 1rem;
 }
 
-/* line 35, src/sass/layout/_home.scss */
+/* line 20, src/sass/layout/_home.scss */
 #search-list .search-list-summary .discount-info {
   color: #e74c3c;
   font-size: 1.4rem !important;
@@ -811,12 +763,12 @@ button {
   margin-bottom: 0;
 }
 
-/* line 43, src/sass/layout/_home.scss */
+/* line 28, src/sass/layout/_home.scss */
 #search-list .search-list-summary small:hover {
   position: relative;
 }
 
-/* line 47, src/sass/layout/_home.scss */
+/* line 32, src/sass/layout/_home.scss */
 #search-list .search-list-summary small[aria-label]:hover:after {
   background: #6b707d;
   color: #fff;
@@ -831,39 +783,93 @@ button {
   z-index: 1;
 }
 
+/* line 50, src/sass/layout/_home.scss */
+.search-list-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 66, src/sass/layout/_home.scss */
+  /* line 59, src/sass/layout/_home.scss */
+  .search-list-summary {
+    margin-top: 2rem;
+  }
+  /* line 63, src/sass/layout/_home.scss */
   small[aria-label]:hover:after {
     left: -200%;
     top: -400%;
   }
-  /* line 71, src/sass/layout/_home.scss */
+  /* line 68, src/sass/layout/_home.scss */
   #map, .map {
     display: none;
+  }
+  /* line 73, src/sass/layout/_home.scss */
+  .search-list-img {
+    grid-column: 1/2;
+  }
+  /* line 74, src/sass/layout/_home.scss */
+  .search-list-text {
+    grid-column: 2/5;
+  }
+  /* line 75, src/sass/layout/_home.scss */
+  .search-list-summary {
+    grid-column: 2/5;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 82, src/sass/layout/_home.scss */
+  .home-search-grid {
+    grid-column: 1/8;
+  }
+  /* line 87, src/sass/layout/_home.scss */
+  .aside-search-grid {
+    grid-column: 8/13;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 78, src/sass/layout/_home.scss */
+  /* line 95, src/sass/layout/_home.scss */
   small[aria-label]:hover:after {
     left: 110%;
     top: -400%;
   }
-  /* line 84, src/sass/layout/_home.scss */
+  /* line 101, src/sass/layout/_home.scss */
   .map {
     position: relative;
     text-align: right;
     margin-left: 4rem;
     top: -4%;
   }
-  /* line 90, src/sass/layout/_home.scss */
+  /* line 107, src/sass/layout/_home.scss */
   .map .map_canvas {
     overflow: hidden;
     background: none !important;
   }
-  /* line 96, src/sass/layout/_home.scss */
+  /* line 113, src/sass/layout/_home.scss */
   .map-link {
     display: none;
+  }
+  /* line 118, src/sass/layout/_home.scss */
+  .home-search-grid {
+    grid-column: 2/8;
+  }
+  /* line 119, src/sass/layout/_home.scss */
+  .aside-search-grid {
+    grid-column: 8/12;
+  }
+  /* line 123, src/sass/layout/_home.scss */
+  .search-list-grid .search-list-img {
+    grid-column: 1/2;
+  }
+  /* line 124, src/sass/layout/_home.scss */
+  .search-list-grid .search-list-text {
+    grid-column: 2/4;
+  }
+  /* line 125, src/sass/layout/_home.scss */
+  .search-list-grid .search-list-summary {
+    grid-column: 4/5;
   }
 }
 

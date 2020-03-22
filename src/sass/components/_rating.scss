@@ -1,0 +1,12 @@
+@import "src/sass/abstracts/variables";
+
+.rating {
+  background-image: url('/svg/icons/star.svg');
+  filter: grayscale(50%);
+  fill: $default-grey;
+  background-repeat: repeat-x;
+  background-position: 0;
+  background-size: 2.4rem 2.4rem;
+  height: 2.4rem;
+  width: 12rem;
+}

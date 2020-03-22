@@ -6,7 +6,7 @@
   height: auto;
   background-color: #DEF3E7;
   padding: 2rem;
-  border-bottom: 2px solid #00AB80;
+  border-bottom: 0.2rem solid #00AB80;
   font-size: $h3-font-size;
   font-weight: $font-weight-medium;
   color: $heading-text-color;
@@ -34,7 +34,7 @@
 //user information card
 .user-data-card {
   padding-bottom: 1.5rem;
-  border-top: 1px solid $divider-color;
+  border-top: 0.1rem solid $divider-color;
 
   .-info-title {
     text-transform: uppercase;
@@ -100,6 +100,23 @@
 }
 
 @media only screen and (max-width: $breakpoint-tablet) {
+
+  .user-summary-grid {
+    .user-data-card {
+      border-top: none;
+      border-bottom: 0.1rem solid $divider-color;
+      margin-bottom: 3rem;
+
+      dl:first-child {
+        dt {
+          padding-top: 0;
+        }
+      }
+
+      .user-data-grid:first-of-type {
+      }
+    }
+  }
 
   .-info-title {
     font-size: $h5-font-size;

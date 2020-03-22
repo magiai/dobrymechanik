@@ -34,3 +34,23 @@
   background-color: $form-field-color;
   outline:0;
 }
+
+.radio-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  border: 0.1rem solid $brand-color;
+  transition: 0.1s all linear;
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+
+  &:checked {
+    border: 0.5rem solid $radio-border-checked-color;
+  }
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+
+  }
+}

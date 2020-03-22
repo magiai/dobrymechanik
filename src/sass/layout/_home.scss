@@ -5,9 +5,7 @@
   .search-list-summary {
     text-align: right;
 
-    .old-price {
-      font-size: $h4-font-size;
-    }
+    .old-price { font-size: $h4-font-size; }
 
     .price-discount {
       color: $warning-text-color;
@@ -23,27 +21,7 @@
       margin-top: 0;
       margin-bottom: 0;
     }
-
-    //tooltip information
-    small:hover {
-      position: relative;
-    }
-
-    small[aria-label]:hover:after {
-      background: $main-text-color;
-      color: #fff;
-      content: attr(aria-label);
-      text-align: left;
-      line-height: $line-height;
-      padding: 1rem 1rem;
-      border-radius: 0.5rem;
-      font-size: $h5-font-size;
-      max-width: 30rem;
-      position: absolute;
-      z-index: 1;
-    }
   }
-
 }
 
 //search list grid
@@ -56,17 +34,12 @@
 //mobile
 @media only screen and (max-width: $breakpoint-tablet) {
 
-  .search-list-summary {
-    margin-top: 2rem;
-  }
+  .search-list-summary { margin-top: 2rem; }
+  #map, .map { display: none; }
 
   small[aria-label]:hover:after {
     left: -200%;
     top: -400%;
-  }
-
-  #map, .map {
-    display: none;
   }
 
   //search list grid
@@ -79,14 +52,10 @@
 @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
 
   //main container
-  .home-search-grid {
-    grid-column: 1/8;
-  }
+  .home-search-grid { grid-column: 1/8; }
 
   //aside container
-  .aside-search-grid {
-    grid-column: 8/13;
-  }
+  .aside-search-grid { grid-column: 8/13; }
 }
 
 //tablet & desktop

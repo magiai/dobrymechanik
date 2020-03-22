@@ -1,0 +1,20 @@
+@import "src/sass/abstracts/variables";
+
+//tooltip information !set up of top & left needed in local file
+small:hover {
+  position: relative;
+}
+
+small[aria-label]:hover:after {
+  background: $main-text-color;
+  color: #fff;
+  content: attr(aria-label);
+  text-align: left;
+  line-height: $line-height;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  font-size: $h5-font-size;
+  max-width: 30rem;
+  position: absolute;
+  z-index: 1;
+}

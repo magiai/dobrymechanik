@@ -1,7 +1,6 @@
 @import "src/sass/abstracts/variables";
 
 //--- grid for tablet & desktop --- //
-//use example breakpoints: breakpoint-sass.com
 //grid tutorial: https://css-tricks.com/snippets/css/complete-guide-grid/
 
 //all devices
@@ -23,17 +22,25 @@
     padding-left: 2rem;
   }
 
-  .aside-steps-grid { padding-bottom: 7.4rem; }
+  .aside-steps-grid, .steps-grid-revert { padding-bottom: 7.4rem; }
 }
-
 
 //tablet & desktop
 @media only screen and (min-width: $breakpoint-tablet) {
 
-  //main grid
-  .grid-container {
+  .header-grid, .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+  }
+
+  .header-grid {
+    align-items: center;
+  }
+
+  //main grid
+  .grid-container {
+    .user-summary-grid:nth-child(1) { order: 2 }
+    .steps-grid-revert:nth-child(2) { order: 1 }
   }
 }
 
@@ -45,13 +52,13 @@
   .slogan { grid-column: 3/10; }
   .nav-btn { grid-column: 10/13; }
 
-  .steps-grid, .aside-steps-grid { padding-top: 2rem; }
+  //.steps-grid, .aside-steps-grid { padding-top: 2rem; }
 
   //main container
-  .steps-grid { grid-column: 1/8; }
+  .steps-grid, .steps-grid-revert { grid-column: 1/8; }
 
   //aside container
-  .aside-steps-grid {
+  .aside-steps-grid, .user-summary-grid  {
     grid-column: 8/13;
     padding-left: 2rem;
   }
@@ -70,14 +77,14 @@
   }
 
   //steps pages
-  .steps-grid { grid-column: 3/8 }
+  .steps-grid, .steps-grid-revert { grid-column: 3/8 }
 
-  .aside-steps-grid {
+  .aside-steps-grid, .user-summary-grid {
     grid-column: 8/11;
     padding-left: 5rem;
   }
 
-  .steps-grid, .aside-steps-grid {
-    padding-top: 4rem;
-  }
+  //.steps-grid, .aside-steps-grid, .user-summary-grid {
+  //  padding-top: 4rem;
+  //}
 }

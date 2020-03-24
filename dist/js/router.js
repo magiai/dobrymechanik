@@ -60,7 +60,7 @@ Router.prototype = {
             xhttp.send();
 
             //progress bar
-            let progressBar = document.getElementById('progress-bar');
+            const progressBar = document.getElementById('progress-bar');
             //to modify if number of steps will be changed
             let widthLength = stepValue * 25 + '%';
 

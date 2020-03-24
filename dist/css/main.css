@@ -321,7 +321,7 @@ button {
 /* line 40, src/sass/components/_buttons.scss */
 .btn-primary-outline {
   color: #176AE6;
-  border: 1px solid #176AE6;
+  border: 0.1rem solid #176AE6;
   background-color: transparent;
 }
 
@@ -352,7 +352,7 @@ button {
 /* line 40, src/sass/components/_buttons.scss */
 .btn-default-outline {
   color: #555;
-  border: 1px solid #555;
+  border: 0.1rem solid #555;
   background-color: transparent;
 }
 
@@ -518,26 +518,26 @@ button {
   .user-summary-grid .user-data-card dl:first-child dt {
     padding-top: 0;
   }
-  /* line 121, src/sass/components/_cards.scss */
+  /* line 118, src/sass/components/_cards.scss */
   .-info-title {
     font-size: 1.2rem !important;
   }
-  /* line 125, src/sass/components/_cards.scss */
+  /* line 122, src/sass/components/_cards.scss */
   .service-description {
     grid-column: 1/5;
   }
-  /* line 126, src/sass/components/_cards.scss */
+  /* line 123, src/sass/components/_cards.scss */
   .old-price-description {
     grid-column: 5/9;
   }
-  /* line 127, src/sass/components/_cards.scss */
+  /* line 124, src/sass/components/_cards.scss */
   .new-price-description {
     grid-column: 9/13;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 132, src/sass/components/_cards.scss */
+  /* line 129, src/sass/components/_cards.scss */
   .user-data-card {
     border-left: 1px solid rgba(0, 0, 0, 0.12);
     border-right: 1px solid rgba(0, 0, 0, 0.12);
@@ -545,19 +545,19 @@ button {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-  /* line 139, src/sass/components/_cards.scss */
+  /* line 136, src/sass/components/_cards.scss */
   .user-data-card .-info-title {
     font-size: 1.4rem !important;
   }
-  /* line 141, src/sass/components/_cards.scss */
+  /* line 138, src/sass/components/_cards.scss */
   .user-data-card .service-description {
     grid-column: 1/7;
   }
-  /* line 142, src/sass/components/_cards.scss */
+  /* line 139, src/sass/components/_cards.scss */
   .user-data-card .old-price-description {
     grid-column: 7/10;
   }
-  /* line 143, src/sass/components/_cards.scss */
+  /* line 140, src/sass/components/_cards.scss */
   .user-data-card .new-price-description {
     grid-column: 10/13;
   }

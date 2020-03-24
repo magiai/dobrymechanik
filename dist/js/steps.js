@@ -49,7 +49,7 @@ window.addEventListener('load',(function() {
     };
 
     const userForm = document.forms['userDataForm'];
-    userForm.addEventListener("submit", validateForm);
+    if (userForm) userForm.addEventListener("submit", validateForm);
 }));
 
 

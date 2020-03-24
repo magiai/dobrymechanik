@@ -3,7 +3,7 @@
 window.addEventListener('load',function() {
 
     function showCalendar() {
-        let calendar = document.getElementById('calendar');
+        const calendar = document.getElementById('calendar');
         calendar.style.display = 'block';
     }
 

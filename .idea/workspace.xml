@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="925e7e50-7ec7-4bad-8909-4739604133b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/steps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/steps.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/steps.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/views/steps/choose-date.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/views/steps/choose-date.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/views/steps/contact-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/views/steps/contact-data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/copy/views/steps/choose-date.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy/views/steps/choose-date.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/steps.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584530475904</updated>
-      <workItem from="1584530482482" duration="170933000" />
+      <workItem from="1584530482482" duration="171470000" />
     </task>
     <servers />
   </component>
